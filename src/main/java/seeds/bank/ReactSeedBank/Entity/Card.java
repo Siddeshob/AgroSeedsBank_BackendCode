@@ -8,9 +8,9 @@ public class Card {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @JsonProperty("id")
+    @JsonProperty("id")  // api show or reflect this (ID)field
     private Long id;
-    private String imageLink;
+    private String imageLink; //
     private String itemName;
     private Double price;
     private String villageAddress;

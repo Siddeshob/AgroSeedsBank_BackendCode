@@ -34,7 +34,7 @@ public class CardService {
     public Card updateCard(Long id,Card card)
     {
         Card findedCard=cardRepo.findById(id).orElseThrow(() ->new RuntimeException("card cannot find"));
-        findedCard.setImageLink(card.getImageLink());
+        findedCard.setImageLink(card.getImageLink()); //http:// drive/img/surya
         findedCard.setItemName(card.getItemName());
         findedCard.setPrice(card.getPrice());
         findedCard.setVillageAddress(card.getVillageAddress());
